@@ -95,6 +95,9 @@
         <Compile Include="ProjectCollectionShould.cs" />
         <Compile Include="ProjectShould.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="TestCaseSources\InValidHexColors.cs" />
+        <Compile Include="TestCaseSources\ValidHexColors.cs" />
+        <Compile Include="ValidatorShould.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="App.config" />
