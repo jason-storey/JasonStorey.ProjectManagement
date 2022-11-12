@@ -4,6 +4,7 @@ namespace JasonStorey.ProjectManagement
 {
     public class Project
     {
+        public const string DEFAULT_PROJECT_COLOR = "#2e74e6";
         string _color;
 
         public static Project Create(string name,string description = "") =>
@@ -11,7 +12,8 @@ namespace JasonStorey.ProjectManagement
             {
                 Name = name,
                 Description = description,
-                CreatedDate = DateTimeOffset.Now
+                CreatedDate = DateTimeOffset.Now,
+                Color = DEFAULT_PROJECT_COLOR
             };
 
         public string Description { get; set; }

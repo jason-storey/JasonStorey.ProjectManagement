@@ -8,6 +8,10 @@ namespace JasonStorey.ProjectManagement.Tests
     public class ProjectShould
     {
         [Test]
+        public void When_created_with_no_color_then_is_default_color() => 
+            Project.Create("Project").Color.Should().Be(Project.DEFAULT_PROJECT_COLOR);
+
+        [Test]
         public void When_creating_then_name_matches()
         {
             var randomName = RandomString;
