@@ -1,0 +1,6 @@
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\bin\Debug\JasonStorey.ProjectManagement.dll
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\bin\Debug\JasonStorey.ProjectManagement.pdb
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\obj\Debug\JasonStorey.ProjectManagement.csproj.AssemblyReference.cache
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\obj\Debug\JasonStorey.ProjectManagement.csproj.CoreCompileInputs.cache
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\obj\Debug\JasonStorey.ProjectManagement.dll
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\obj\Debug\JasonStorey.ProjectManagement.pdb
