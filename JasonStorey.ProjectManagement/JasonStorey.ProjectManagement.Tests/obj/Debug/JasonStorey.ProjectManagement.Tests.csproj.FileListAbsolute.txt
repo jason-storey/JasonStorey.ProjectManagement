@@ -21,3 +21,5 @@ D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStor
 D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement.Tests\obj\Debug\JasonStorey.ProjectManagement.Tests.csproj.CopyComplete
 D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement.Tests\obj\Debug\JasonStorey.ProjectManagement.Tests.dll
 D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement.Tests\obj\Debug\JasonStorey.ProjectManagement.Tests.pdb
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement.Tests\bin\Debug\Bogus.dll
+D:\Computer\Projects\Github Repositories\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement\JasonStorey.ProjectManagement.Tests\bin\Debug\Bogus.xml
