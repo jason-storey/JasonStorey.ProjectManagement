@@ -1,23 +1,11 @@
 ﻿namespace JasonStorey.ProjectManagement.Tests
 {
-    public class ProjectCollectionBuilder
+    public class ProjectCollectionBuilder : ABuilder<ProjectCollection>
     {
-        ProjectCollection _projectCollection;
-
-        public ProjectCollectionBuilder()
-        {
-            _projectCollection = new ProjectCollection();
-        }
-
         public ProjectCollectionBuilder WithName(string name)
         {
-            _projectCollection.Name = name;
+            Object.Value.Name = name;
             return this;
         }
-        
-        public ProjectCollection Build() => _projectCollection;
-
-        public static implicit operator ProjectCollection(ProjectCollectionBuilder b) => b.Build();
-        
     }
 }

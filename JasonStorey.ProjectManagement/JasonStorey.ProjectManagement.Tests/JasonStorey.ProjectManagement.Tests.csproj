@@ -87,6 +87,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Builders\A.cs" />
+        <Compile Include="Builders\ABuilder.cs" />
         <Compile Include="Builders\Fakes\Fakers.cs" />
         <Compile Include="Builders\Fakes\ProjectCollectionFaker.cs" />
         <Compile Include="Builders\Fakes\ProjectFaker.cs" />
