@@ -2,9 +2,11 @@
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
+using static JasonStorey.ProjectManagement.Tests.RandomValues;
 
 namespace JasonStorey.ProjectManagement.Tests
 {
+    //#TODO Add Dirty flag and Save method
     [TestFixture]
     public class ProjectCollectionShould
     {
@@ -21,7 +23,7 @@ namespace JasonStorey.ProjectManagement.Tests
         {
             var project = Project.Create("Project Name","Does stuff");
             var projects = new ProjectCollection { project };
-
+            
             projects.Count.Should().Be(1);
             projects.Count().Should().Be(1);
         }
@@ -61,7 +63,7 @@ namespace JasonStorey.ProjectManagement.Tests
         [Test]
         public void When_setting_name_in_constructor_sets_project_collection_name()
         {
-            var randomName = RandomString;
+            var randomName = String(); 
             var collection = ProjectCollection.Create(randomName);
             collection.Name.Should().Be(randomName);
         }
@@ -78,7 +80,7 @@ namespace JasonStorey.ProjectManagement.Tests
         [Test]
         public void When_Add_then_adds_new_project()
         {
-            var name = RandomString;
+            var name = String();
             var project = ProjectCollection.Create().Add(name);
             project.Name.Should().Be(name);
         }
@@ -97,7 +99,7 @@ namespace JasonStorey.ProjectManagement.Tests
         [Test]
         public void Given_validName_When_TryGetByName_returns_true()
         {
-            var someName = RandomString;
+            var someName = String();
             
             var collection = ProjectCollection.Create();
             var project = collection.Add(someName);
@@ -111,11 +113,11 @@ namespace JasonStorey.ProjectManagement.Tests
         [Test]
         public void Given_invalidName_When_TryGetByName_returns_false()
         {
-            var someName = RandomString;
-            var someOtherName = RandomString;
+            var someName = String();
+            var someOtherName = String();
 
             var collection = ProjectCollection.Create();
-            collection.Add(someName);
+            collection.Add(String());
 
             collection.TryGetByName(someOtherName, out _).Should().BeFalse();
         }
@@ -125,11 +127,11 @@ namespace JasonStorey.ProjectManagement.Tests
         {
             var collection = ProjectCollection.Create();
             for (int i = 0; i < 10; i++) 
-                collection.Add(RandomString);
+                collection.Add(String());
 
             Action tryGetByIndexer = () =>
             {
-                var result = collection[RandomString];
+                var result = collection[String()];
             };
             
             tryGetByIndexer.Should().Throw<ProjectNotFoundException>();
@@ -138,7 +140,7 @@ namespace JasonStorey.ProjectManagement.Tests
         [Test]
         public void Given_nonExistentProject_when_ProjectNotFoundThrown_ProjectName_matches_query()
         {
-            string NON_EXISTENT_PROJECT_NAME = RandomString;
+            string NON_EXISTENT_PROJECT_NAME = String();
             try
             {
                 var p = ProjectCollection.Create()[NON_EXISTENT_PROJECT_NAME];
@@ -241,11 +243,7 @@ namespace JasonStorey.ProjectManagement.Tests
             collection.AddRange(A.Fake.ListOfProjects.Take(12));
           //  collection.Add()
             
-            
         }
         
-
-        static string RandomString => Guid.NewGuid().ToString();
-
     }
 }

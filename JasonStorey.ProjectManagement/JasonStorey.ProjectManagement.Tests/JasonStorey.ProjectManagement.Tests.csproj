@@ -96,6 +96,7 @@
         <Compile Include="ProjectCollectionShould.cs" />
         <Compile Include="ProjectShould.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="RandomValues.cs" />
         <Compile Include="TestCaseSources\ContainsInvalidCases.cs" />
         <Compile Include="TestCaseSources\ContainsValidCases.cs" />
         <Compile Include="TestCaseSources\InValidHexColors.cs" />
